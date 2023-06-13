@@ -1,6 +1,9 @@
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://0.0.0.0/hospital-api');
+mongoose.connect(process.env.MONGO_URL,{
+     useNewUrlParser: true,
+     useUnifiedTopology: true,
+   });
 
 const db = mongoose.connection;
 
