@@ -1,6 +1,9 @@
 // env 
 require("dotenv").config();
+<<<<<<< HEAD
 
+=======
+>>>>>>> c5e0c70f6dea73f844226e962541a4579271f383
 const express = require('express');
 const app = express();
 const port = process.env.PORT
